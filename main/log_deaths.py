@@ -1,13 +1,15 @@
 import log_parser
 import json
 
+
+# Function to read the log file and group data by match
 def parser():
     logs = log_parser.read_file()
-    dictionary = log_parser.group_game_data_by_match(logs)
-    return dictionary
+    game_dictionary = log_parser.group_game_data_by_match(logs)
+    return game_dictionary
 
 
-# Function to read the dictionary extracted from log file and return a json format as result
+# Function to collect kill data from the dictionary created
 def group_deaths_information(game_dictionary):
     deaths_grouped_information = {}
 
@@ -40,6 +42,7 @@ def group_deaths_information(game_dictionary):
 
         deaths_grouped_information[game]['kills_by_means'] = kills_by_means
     return json.dumps(deaths_grouped_information, indent=3)
+
 
 dictionary = parser()
 output = group_deaths_information(dictionary)
