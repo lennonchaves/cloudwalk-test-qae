@@ -57,6 +57,12 @@ def group_game_data_by_match(log):
     return game_dictionary
 
 
+# Function to get the ranking by each game
+def get_ranking(kills):
+    ranking = dict(sorted(kills.items(), key=lambda item: item[1], reverse=True))
+    return ranking
+
+
 # Function to read the dictionary extracted from log file and return a json format as result
 def collect_kill_data(game_dictionary):
     game_grouped_information = {}
@@ -98,6 +104,7 @@ def collect_kill_data(game_dictionary):
         game_grouped_information[game]['players'] = player_list
         game_grouped_information[game]['total_kills'] = total_kills
         game_grouped_information[game]['kills'] = kills
+        game_grouped_information[game]['ranking'] = get_ranking(kills)
 
     return game_grouped_information
 
