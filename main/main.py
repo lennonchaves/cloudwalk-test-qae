@@ -18,9 +18,12 @@ while True:
 
     option = int(input("Enter your choice: "))
 
+    # perform the function according to the option selected
     if option == 1:
-       log_parser.execute()
+        # Log parsed and grouped information with player ranking
+        log_parser.execute()
     elif option == 2:
+        # Report of deaths grouped by death cause
         log_deaths.execute()
     elif option == 3:
         print("Exiting application")
