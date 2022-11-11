@@ -1,3 +1,4 @@
+# importing the module
 from pathlib import Path
 import json
 
@@ -109,8 +110,10 @@ def collect_kill_data(game_dictionary):
     return game_grouped_information
 
 
-logs = read_file()
-dictionary = group_game_data_by_match(logs)
-kill_data = collect_kill_data(dictionary)
-output = json.dumps(kill_data, indent=3)
-print(output)
+# Function to perform the log parser and ranking from each match
+def execute():
+    logs = read_file()
+    dictionary = group_game_data_by_match(logs)
+    kill_data = collect_kill_data(dictionary)
+    output = json.dumps(kill_data, indent=3)
+    print(output)
