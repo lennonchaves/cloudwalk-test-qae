@@ -17,6 +17,3 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-    - name: Running the main file
-      run: |
-        python3 main.py
