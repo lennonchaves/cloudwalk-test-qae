@@ -25,3 +25,11 @@ This is the test for the Quality Engineering positions at CloudWalk.
 $ python3 main.py
 ```
 3) Use the program
+
+## **Scripts Description:**
+
+- ***main.py*** : main script, responsbile to diplay the options to the user
+
+- ***log_parser.py*** : containts the functions to parser the log file and print in json format
+
+- ***log_deaths.py*** : contains the functions to get the deaths list by each match in json format
