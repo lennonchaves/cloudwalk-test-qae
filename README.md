@@ -1,4 +1,4 @@
-https://github.com/lennonchaves/cloudwalk-test-qae/actions/workflows/pylint.yml/badge.svg
+![Build Status](https://github.com/lennonchaves/cloudwalk-test-qae/actions/workflows/pylint.yml/badge.svg)
 
 # Cloudwalk-Test
 
