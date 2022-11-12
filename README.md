@@ -32,6 +32,6 @@ $ python3 main.py
 
 - ***main.py*** : main script, responsbile to display the options to the user
 
-- ***log_parser.py*** : containts the functions to parser the log file and print in json format
+- ***log_parser.py*** : contains the functions to parser the log file and print in json format
 
 - ***log_deaths.py*** : contains the functions to get the deaths list by each match in json format
