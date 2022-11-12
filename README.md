@@ -30,7 +30,7 @@ $ python3 main.py
 
 ## **Scripts Description:**
 
-- ***main.py*** : main script, responsbile to diplay the options to the user
+- ***main.py*** : main script, responsbile to display the options to the user
 
 - ***log_parser.py*** : containts the functions to parser the log file and print in json format
 
