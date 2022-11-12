@@ -1,3 +1,5 @@
+https://github.com/lennonchaves/cloudwalk-test-qae/actions/workflows/pylint.yml/badge.svg
+
 # Cloudwalk-Test
 
 This is the test for the Quality Engineering positions at CloudWalk.
